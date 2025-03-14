@@ -1,0 +1,36 @@
+<!-- Cihaz Tanımlama DTD -->
+<!ELEMENT CihazTanimlama (Cihaz)>
+<!ELEMENT Cihaz (Tur, Model, GucBesleme, Terminaller, ModernizasyonBilesenleri)>
+
+<!ELEMENT Tur (#PCDATA)>
+<!ELEMENT Model (#PCDATA)>
+
+<!ELEMENT GucBesleme (Voltaj, Tip)>
+<!ELEMENT Voltaj (#PCDATA)>
+<!ELEMENT Tip (#PCDATA)>
+
+<!ELEMENT Terminaller (Terminal+)>
+<!ELEMENT Terminal (Numara, Isim, Aciklama, ElektrikselOzellik, KabloRenkleri?)>
+<!ATTLIST Terminal id ID #REQUIRED>
+<!ELEMENT Numara (#PCDATA)>
+<!ELEMENT Isim (#PCDATA)>
+<!ELEMENT Aciklama (#PCDATA)>
+
+<!ELEMENT ElektrikselOzellik (Voltaj, Tip, MaxAkim)>
+<!ELEMENT MaxAkim (#PCDATA)>
+
+<!ELEMENT KabloRenkleri (Giris?, Cikis?)>
+<!ELEMENT Giris (#PCDATA)>
+<!ELEMENT Cikis (#PCDATA)>
+
+<!ELEMENT ModernizasyonBilesenleri (Kontrolcu, Role)>
+<!ELEMENT Kontrolcu (Tip, Model, BaglantiNoktasi+)>
+<!ELEMENT BaglantiNoktasi (GPIO, Amac)>
+<!ELEMENT GPIO (#PCDATA)>
+<!ELEMENT Amac (#PCDATA)>
+
+<!ELEMENT Role (KanalSayisi, TetikVoltaji, KontakTipi, MaxSwitchVoltaji)>
+<!ELEMENT KanalSayisi (#PCDATA)>
+<!ELEMENT TetikVoltaji (#PCDATA)>
+<!ELEMENT KontakTipi (#PCDATA)>
+<!ELEMENT MaxSwitchVoltaji (#PCDATA)>

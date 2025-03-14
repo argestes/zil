@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE CihazTanimlama SYSTEM "cihaz.dtd">
+<CihazTanimlama>
+    <Cihaz>
+        <Tur>Diafon</Tur>
+        <Model>Generic</Model>
+        <GucBesleme>
+            <Voltaj>24V</Voltaj>
+            <Tip>DC</Tip>
+        </GucBesleme>
+        
+        <Terminaller>
+            <Terminal id="1">
+                <Numara>1</Numara>
+                <Isim>GND</Isim>
+                <Aciklama>Ana toprak bağlantısı</Aciklama>
+                <ElektrikselOzellik>
+                    <Voltaj>0V</Voltaj>
+                    <Tip>DC</Tip>
+                    <MaxAkim>N/A</MaxAkim>
+                </ElektrikselOzellik>
+            </Terminal>
+
+            <Terminal id="6">
+                <Numara>6</Numara>
+                <Isim>VCC</Isim>
+                <Aciklama>Ana güç girişi</Aciklama>
+                <ElektrikselOzellik>
+                    <Voltaj>24V</Voltaj>
+                    <Tip>DC</Tip>
+                    <MaxAkim>N/A</MaxAkim>
+                </ElektrikselOzellik>
+            </Terminal>
+
+            <Terminal id="7">
+                <Numara>7</Numara>
+                <Isim>KAPI_KONTROL_P</Isim>
+                <Aciklama>Kapı kontrol pozitif</Aciklama>
+                <ElektrikselOzellik>
+                    <Voltaj>N/A</Voltaj>
+                    <Tip>Röle_NO</Tip>
+                    <MaxAkim>N/A</MaxAkim>
+                </ElektrikselOzellik>
+            </Terminal>
+
+            <Terminal id="8">
+                <Numara>8</Numara>
+                <Isim>KAPI_KONTROL_N</Isim>
+                <Aciklama>Kapı kontrol negatif</Aciklama>
+                <ElektrikselOzellik>
+                    <Voltaj>N/A</Voltaj>
+                    <Tip>Röle_COM</Tip>
+                    <MaxAkim>N/A</MaxAkim>
+                </ElektrikselOzellik>
+            </Terminal>
+
+            <Terminal id="9">
+                <Numara>9</Numara>
+                <Isim>BILINMEYEN</Isim>
+                <Aciklama>Mavi kablo bağlantısı, kırmızı dönüş</Aciklama>
+                <KabloRenkleri>
+                    <Giris>Mavi</Giris>
+                    <Cikis>Kırmızı</Cikis>
+                </KabloRenkleri>
+                <ElektrikselOzellik>
+                    <Voltaj>N/A</Voltaj>
+                    <Tip>N/A</Tip>
+                    <MaxAkim>N/A</MaxAkim>
+                </ElektrikselOzellik>
+            </Terminal>
+        </Terminaller>
+
+        <ModernizasyonBilesenleri>
+            <Kontrolcu>
+                <Tip>NodeMCU</Tip>
+                <Model>ESP8266</Model>
+                <BaglantiNoktasi>
+                    <GPIO>D1</GPIO>
+                    <Amac>Röle Kontrol 1</Amac>
+                </BaglantiNoktasi>
+                <BaglantiNoktasi>
+                    <GPIO>D2</GPIO>
+                    <Amac>Röle Kontrol 2 (Opsiyonel)</Amac>
+                </BaglantiNoktasi>
+            </Kontrolcu>
+            
+            <Role>
+                <KanalSayisi>2</KanalSayisi>
+                <TetikVoltaji>5V</TetikVoltaji>
+                <KontakTipi>NO/COM</KontakTipi>
+                <MaxSwitchVoltaji>24V DC</MaxSwitchVoltaji>
+            </Role>
+        </ModernizasyonBilesenleri>
+    </Cihaz>
+</CihazTanimlama>

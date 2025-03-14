@@ -1,7 +1,16 @@
 {
   "owner": "Yigit",
   "created": "2025-03-14T17:59:07+03:00",
+  "lastModified": "2025-03-14T18:01:34+03:00",
+  "message": "looks ok i guess..",
   "permissions": ["read", "write", "approve"],
-  "signature": "TODO: Implement signing mechanism",
-  "publicKey": "TODO: Add public key for document verification"
+  "signature": "TODO: Implement signing mechanism with RSA or similar",
+  "publicKey": "TODO: Add public key for document verification",
+  "approvalHistory": [
+    {
+      "timestamp": "2025-03-14T18:01:34+03:00",
+      "message": "looks ok i guess..",
+      "signature": "TODO: Add signature here"
+    }
+  ]
 }
